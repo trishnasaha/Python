@@ -13,4 +13,3 @@ elif score >= 0.6:
     print("grade D")
 elif score < 0.6:
     print("garde F")
-   
