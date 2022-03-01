@@ -1,15 +1,20 @@
 sc = input("score:")
-score = float(sc)
-if score < 0.0 or score > 1.0:
-    print("out of range")
 
+try:
+    score = float(sc)
+except:
+    print("Bad score")
+    quit()
+
+if score < 0.0 or score > 1.0:
+    print("Bad score")
 elif score >= 0.9:
-    print("grade A")
+    print("A")
 elif score >= 0.8:
-    print("grade B")
+    print("B")
 elif score >= 0.7:
-    print("grade C")
+    print("C")
 elif score >= 0.6:
-    print("grade D")
+    print("D")
 elif score < 0.6:
-    print("garde F")
+    print("F")
