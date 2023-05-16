@@ -1,3 +1,4 @@
+#8.16.4
 fname = input("enter a file name:")
 fhand = open(fname)
 lst = list()
