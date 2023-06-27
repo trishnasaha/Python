@@ -14,14 +14,18 @@ for line in handle:
     if not line.startswith('From '): continue
     
     words = line.rstrip().split()
+
+    #print(words)
     
     word = words[1]
 
-    d[word] = d.get(word,0) + 1
+    #print(word)
+
+    d[word] = d.get(word,0) + 1   #retrieve count
 
     
 #print(d)
-
+# oneway of doing
 #maxcount = None
 #maxword = None
 
@@ -31,6 +35,7 @@ for line in handle:
       #  maxword = word
 #print(maxword, maxcount)
 
+#anotherway
 maxCount = max(d.values())
 
 for word, count in d.items():
