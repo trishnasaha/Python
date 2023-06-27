@@ -6,11 +6,11 @@ str = 'X-DSPAM-Confidence:0.8475'
 
 semicolpos = str.find(':')
 
-print(semicolpos)
+#print(semicolpos)
 
 numpos = str[semicolpos+1:]
 
-print(numpos)
+#print(numpos)
 
 fpos = float(numpos)
 
