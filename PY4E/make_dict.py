@@ -1,5 +1,9 @@
 fname = input("enter a file name:")
-fhand = open(fname)
+try:
+    fhand = open(fname)
+except:
+    print("file cannot be opened:", fname)
+    exit()
 split_words= dict()
 count = 0
 for lines in fhand:
